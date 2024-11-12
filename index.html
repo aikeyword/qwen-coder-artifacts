@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>qwen2.5-32B-coder-artifacts</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f9;
+        }
+        iframe, gradio-app {
+            border: none;
+            width: 850px;
+            height: 450px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Using Web Component -->
+    <script type="module" src="https://gradio.s3-us-west-2.amazonaws.com/5.5.0/gradio.js"></script>
+    <gradio-app src="https://qwen-qwen2-5-coder-artifacts.hf.space"></gradio-app>
+
+    <!-- Using Iframe as a fallback -->
+    <iframe src="https://qwen-qwen2-5-coder-artifacts.hf.space" frameborder="0"></iframe>
+</body>
+</html>
